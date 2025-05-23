@@ -7,7 +7,7 @@ import expressiveCode from 'astro-expressive-code';
 export default defineConfig({
 	site: "https://justtheant.github.io/nexium-web/",
 	base: "/nexium-web/",
-	outDir: "public",
+	outDir: "dist",
 	publicDir: "static",
 
 	integrations: [
