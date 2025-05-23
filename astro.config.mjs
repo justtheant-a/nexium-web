@@ -6,7 +6,7 @@ import expressiveCode from 'astro-expressive-code';
 // https://astro.build/config
 export default defineConfig({
 	site: "https://justtheant.github.io/nexium-web/",
-	base: "/nexium-web/",
+	base: "/",
 	outDir: "dist",
 	publicDir: "static",
 
@@ -18,7 +18,7 @@ export default defineConfig({
 				{
 					label: 'Introduction',
 					items: [
-						{ label: "Qu'est ce que nexium ?", slug: '/nexium-web/introduction/quest_ce_que_nexium' },
+						{ label: "Qu'est ce que nexium ?", slug: 'introduction/quest_ce_que_nexium' },
 					],
 				},
 				{
