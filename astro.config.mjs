@@ -5,7 +5,7 @@ import expressiveCode from 'astro-expressive-code';
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://nexium-web-jean-herail-996229e3743b284c14cf054d183ad23c2dddd432.pages.epita.fr",
+	site: "https://nexium-site-antonin-bessieres-8751ef9947c3e68822f59a455da7bc5f0.pages.epita.fr/",
 	base: "/",
 	outDir: "public",
 	publicDir: "static",
