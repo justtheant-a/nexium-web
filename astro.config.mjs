@@ -18,7 +18,7 @@ export default defineConfig({
 				{
 					label: 'Introduction',
 					items: [
-						{ label: "Qu'est ce que nexium ?", slug: 'introduction/quest_ce_que_nexium' },
+						{ label: "Qu'est ce que nexium ?", slug: '/nexium-web/introduction/quest_ce_que_nexium' },
 					],
 				},
 				{
