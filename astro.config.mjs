@@ -41,12 +41,19 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Client',
+					items: [
+						{ label: "Application", slug: 'client/appli' },
+					]
+				},
+				{
 					label: "GitLab",
 					items: [
 						{ label: "Pourquoi GitLab?", slug: 'gitlab/pourquoi' },
 						{ label: "Connexion à GitLab", slug: 'gitlab/connexion' },
 					]
 				},
+
 				{
 					label: 'Développement',
 					items: [
