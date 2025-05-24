@@ -23,7 +23,10 @@ export default defineConfig({
 				},
 				{
 					label: 'Blockchain',
-					autogenerate: { directory: 'blockchain' },
+					items: [
+						{ label: "Structure des blocs", slug: 'blockchain/blocs' },
+						{ label: "Structures des transactions", slug: 'blockchain/transactions' },
+					],
 				},
 				{
 					label: 'Réseau',
