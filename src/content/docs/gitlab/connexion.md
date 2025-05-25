@@ -5,14 +5,16 @@ order: 10
 ---
 Il existe deux manières de se connecter avec GitLab :
 
-## Grâce au Token
+#### Grâce au Token
+---
 - Créé manuellement par l'utilisateur dans les paramètres Gitlab.
 
 - Durée de validité indéfinie, laissée à l'utilisateur.
 
 - Peut donc être persistent
 
-## Avec OAuth
+#### Avec OAuth
+---
 - Simple clic sur un bouton
 
 - L'appplication Nexium ouvre une fenêtre de navigateur, sur laquelle l'utilisateur est loggé sur son compte Gitlab et doit cliquer sur le bouton "autoriser l'application". 
