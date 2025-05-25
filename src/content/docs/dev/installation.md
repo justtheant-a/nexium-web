@@ -14,7 +14,7 @@ Important : la version de Tauri utilisée est la V2
 
 ### Compilation
 ---
-En fonction de ce que vous souhaiter, il ne reste plus qu'a éxecuter une de ces commandes.
+En fonction de ce que vous souhaitez, il ne reste plus qu'a éxecuter une de ces commandes.
 #### Application client
 ---
 ##### Pour MacOS

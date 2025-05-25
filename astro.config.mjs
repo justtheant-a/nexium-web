@@ -29,10 +29,6 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Réseau',
-					autogenerate: { directory: 'reseau' },
-				},
-				{
 					label: 'API',
 					items: [
 						{ label: "Header", slug: 'api/header' },

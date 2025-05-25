@@ -61,7 +61,7 @@ order: 6
 -   **Body:**
     - ```json
       {
-      "transaction": <transaction>
+      <transaction>
       }
       ```
 -   (Pour la structure d'une **transaction**, voir plus bas)
