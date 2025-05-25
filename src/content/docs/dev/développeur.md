@@ -4,7 +4,7 @@ description: Structure API.
 order: 8
 ---
 
-Liste de toute les personnes ayant participé au développement de ce projet :
+Liste de toutes les personnes ayant participé au développement de ce projet :
 
 -   **Jean HERAIL** (chef de projet)
 -   **Milo DELBOS**

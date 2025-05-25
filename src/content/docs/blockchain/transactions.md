@@ -10,7 +10,7 @@ order: 2
 - `data` (*de 1 à 1719 octets*)
     - Données de la transaction, suivant ou non le format consensuel lié à la valeur de `data_type`.
 - `signature` (*256 octets*)
-    - Signature de la transaction par l'emetteur. Il s'agit de **la signature de la concaténation de `transaction_header` et `data`**.
+    - Signature de la transaction par l'émetteur. Il s'agit de **la signature de la concaténation de `transaction_header` et `data`**.
 
 ### `transaction_header` (*73 octets*)
 - `transaction_size` (*2 octets*)
@@ -22,14 +22,14 @@ order: 2
 - `emitter` (*64 octets*)
     - **login** de l'émetteur de la transaction.
 - `data_type` (*1 octet*)
-    - Type d'information contenue dans le data de la transaction. Détermine comment le noeud validateur doit traiter la transaction (*transfert de crédits, contrats intelligents...*).
+    - Type d'information contenue dans les data de la transaction. Détermine comment le nœud validateur doit traiter la transaction (*transfert de crédits, contrats intelligents...*).
 
     
 ### `data_type` (*1 octet*)
 - `00000001` : Transaction classique.
-    - Transfert de **NEX** classique de l'emetteur vers le récepteur.
+    - Transfert de **NEX** classique de l'émetteur vers le récepteur.
 - `xxxxxxxx` : Autres types de transaction
-    - Pourront être définies par les prochaines versions du protocole. La transaction est incluse dans la blockchain même si le noeud validateur ne reconnait pas la valeur du `data_type`.
+    - Pourront être définies par les prochaines versions du protocole. La transaction est incluse dans la blockchain, même si le nœud validateur ne reconnait pas la valeur du `data_type`.
 
 ### `data` (*de 1 à 1719 octets*)
 - **Pour les transactions classiques** (*69 ou 325 octets*):
@@ -41,9 +41,8 @@ order: 2
         - `1` s'il y a une description
         - `0` sinon.
     - `description` (facultative) (*256 octets*)
-        - Descriptif de la transaction chiffré avec la clé publique du destinataire. Le destinataire est donc le seul à pouvoir lire le descriptif de la transaction. L'existence de ce champ dépend de la valeur de `has_description`.
+        - Descriptif de la transaction chiffrée avec la clé publique du destinataire. Le destinataire est donc le seul à pouvoir lire le descriptif de la transaction. L'existence de ce champ dépend de la valeur de `has_description`.
 
 ---
 
 La limite de taille de **1719** octets du `data` d'une transaction est établie de telle sorte à ce que la taille totale de la transaction (`data`+`transaction_header`+`signature`) n'excède pas **2048 octets**.
-

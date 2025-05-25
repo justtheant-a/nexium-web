@@ -10,7 +10,7 @@ order: 2
 - `bloc_header` (*82 octets*)
     - En-tête du bloc.
 - `transactions` (*de 330 à (2048\*`transaction_count`)*)
-    - Liste des transactions, concaténées.
+    - Liste des transactions concaténées.
 
 ### `bloc_header` (*82 octets*)
 - `version`(*2 octets*)
@@ -18,7 +18,7 @@ order: 2
 - `previous_block_hash` (*32 octets*)
     - Hash (= **identifiant unique**) du bloc précédant.
 - `merkle_root` (*32 octets*)
-    - Hash racine de l'**arbre de Merkle**.
+    - Hash racine de l'**arbre de Merkel**.
 - `timestamp` (*4 octets*)
     - **Unix Timestamp** (secondes depuis le 01/01/1970) de la création du bloc.
 - `difficulty_target` (*4 octets*)
@@ -36,9 +36,9 @@ Les tailles pour un **bloc de n transactions** seraient donc :
 - *transactions sans description* : `82 + n*398` octets.
 - *transactions avec description* : `82 + n*654` octets.
 
-Ces tailles de blocs partent du principe que les transactions contenues par ledit bloc sont toutes **avec** ou **sans** description. 
+Ces tailles de blocs partent du principe que les transactions contenues dans ledit bloc sont toutes **avec** ou **sans** description. 
 
-Cette approche n'est pas réaliste mais permet d'encadrer la taille d'un bloc de **n** transactions.
+Cette approche n'est pas réaliste, mais permet d'encadrer la taille d'un bloc de **n** transactions.
 
 Par exemple, **pour un bloc de 1000 transactions** :
 - *transactions sans description* : `82 + 1000*398` = **398082** octets.

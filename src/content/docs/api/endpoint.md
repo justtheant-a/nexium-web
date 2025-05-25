@@ -22,7 +22,7 @@ order: 6
 
 ## balance
 ---
--   Renvoie le solde actuel sur un utilisateur.
+-   Renvoie le solde actuel à un utilisateur.
 -   Type: **GET**
 -   Endpoint: `/balance/<login>`
 - **Réponse:**
@@ -32,8 +32,9 @@ order: 6
       "noise": <noise>
       }
       ```
--   `noise` est une **chaîne de caractère de longueur 8, générée aléatoirement par le serveur.**
--   Elle peemet d'empêcher l'attaque par brute-force: il n'est pas possible de tester des valeurs de solde dans un certain champ, car le déchiffrement nécessiterait de connaître aussi le noise, non déterministe.
+-   `noise` est une **chaîne de caractères de longueur 8, générée aléatoirement par le serveur.**
+-   Elle permet d'empêcher l'attaque par brute-force : il n'est pas possible de tester des valeurs de solde dans un certain champ, car le déchiffrement nécessiterait de connaître aussi le noise, non déterministe.
+
 
 ## transactions
 
